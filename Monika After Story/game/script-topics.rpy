@@ -4418,6 +4418,19 @@ label monika_penname:
                                 $ penbool = True
                     "I'd rather not; it's embarrassing.":
                         m 2eka "Aww. Well, I hope you feel comfortable enough to tell me someday."
+                    "I decided to stop using a pen name." If penbool = True:
+                        m 1eud "Really? How come?"
+                        menu:
+                            "I didn't feel like using one anymore":
+                                $ penbool = False
+                                $ penname = ""
+                                m 1euc "I see. Well it's your decision to use a pen name or not."
+                                m 5esu "And I'll always support your decisions, my love."
+                            "I'm proud of who I am":
+                                $ penbool = False
+                                $ penname = ""
+                                m 2sub "It's wonderful to hear you say that!"
+                                m 3eua "I hope you know that I'll always be proud of you too, my love."
             "No":
                 m 1hua "All right!"
                 m "If you ever decide on one, you should tell me!"
