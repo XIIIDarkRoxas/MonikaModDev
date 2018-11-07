@@ -4418,7 +4418,7 @@ label monika_penname:
                                 $ penbool = True
                     "I'd rather not; it's embarrassing.":
                         m 2eka "Aww. Well, I hope you feel comfortable enough to tell me someday."
-                    "I decided to stop using a pen name." If penbool = True:
+                    If penbool = True: "I decided to stop using a pen name.":
                         m 1eud "Really? How come?"
                         menu:
                             "I didn't feel like using one anymore":
